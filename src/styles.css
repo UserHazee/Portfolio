@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme{
+    --font-*:initial;
+    --font-display: "Etna" , sans-serif;
+    --breakpoint-medic : 933px;
+    --breakpoint-ghostbreak: 705px;
+    --breakpoint-tiny: 580px;
+    --breakpoint-end:300px;
+    --breakpoint-smile: 427px;
+
+}
+
+@font-face {
+  font-family: 'Etna';
+  src: url('/fonts/Etna.woff2') format('woff2');
+  font-display: swap; /* critical for performance */
+  font-weight: 10;
+  font-style: normal;
+}
