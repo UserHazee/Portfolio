@@ -1208,3 +1208,10 @@
     }
   }
 }
+@font-face {
+  font-family: 'Etna';
+  src: url('/fonts/Etna.woff2') format('woff2');
+  font-display: swap; /* critical for performance */
+  font-weight: 10;
+  font-style: normal;
+}
