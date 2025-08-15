@@ -42,15 +42,15 @@
             <!-- Right Nav -->
             <div class=" flex-1/5">
                 <div class="flex items-start justify-start ps-14">
-                    <p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p>
+                    <a href="index.html"><p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p></a>
                 </div>
             </div>
             <!-- Mid Nav -->
             <div class="hidden flex-1/2 medic:block">
                 <ul class="flex flex-row gap-6 text-2xl place-content-center">
-                    <li class="list1"><span class="font-display text-[#D9D9D9]">About</span></li>
-                    <li class="list2"><span class="font-display text-[#D9D9D9]">Achievements</span></li>
-                    <li class="list3"><span class="font-display text-[#D9D9D9]" s>Contact</span></li>
+                    <a href="#tech_stacks"><li class="list1" ><span class="font-display text-[#D9D9D9]">Stacks</span></li></a>
+                    <a href="#projects"><li class="list2" ><span class="font-display text-[#D9D9D9]">Projects</span></li></a>
+                    <a href="#certificates"><li class="list3" ><span class="font-display text-[#D9D9D9]" s>Certifications</span></li></a>
                 </ul>
             </div>
             <!-- Left Nav -->
@@ -103,7 +103,7 @@
                                 Contact me
                             </span>
                         </button>
-                        <button class="ps-4">
+                        <button class="ps-4" id="btnProject">
                             <span class="font-display text-[16px] italic text-white">My Projects</span>
                         </button>
                     </div>
@@ -325,7 +325,7 @@
             </div>
         </div>
     </section>
-    <section id="certificate" class="pb-24">
+    <section id="certificates" class="pb-24">
         <div class="container">
             <h1 class="pt-12 pb-3 ms-12 ">
                 <span class="text-3xl text-white font-display">Certificates</span>
@@ -361,7 +361,7 @@
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-48 overflow-hidden">
-                        <img src="/assets/img/1752798249832.jpg" class="object-cover w-full h-full" alt="">
+                        <img src="/assets/img/CERTIFICATE (3).jpg" class="object-contain w-full h-full" alt="">
                     </div>
                     <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
@@ -475,6 +475,7 @@
             </div>
         </div>
     </section>
+    <script src="/public/main.js"></script>
 </body>
 
 </html>
