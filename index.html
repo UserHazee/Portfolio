@@ -37,27 +37,26 @@
 </style>
 
 <body class="bg-[#0C0F14]">
-    <header class="container py-2 bg-[#0c0F14] pb-26">
+    <header class=" py-2 bg-[#0c0F14] pb-26">
         <div class="flex flex-row items-center justify-center gap-10 ">
             <!-- Right Nav -->
             <div class=" flex-1/5">
                 <div class="flex items-start justify-start ps-14">
-                    <p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p>
+                    <a href="index.html"><p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p></a>
                 </div>
             </div>
             <!-- Mid Nav -->
             <div class="hidden flex-1/2 medic:block">
-                <ul class="flex flex-row gap-6 text-2xl place-content-center">
-                    <li class="list1"><span class="font-display text-[#D9D9D9]">About</span></li>
-                    <li class="list2"><span class="font-display text-[#D9D9D9]">Achievements</span></li>
-                    <li class="list3"><span class="font-display text-[#D9D9D9]" s>Contact</span></li>
+                <ul class="flex flex-row gap-6 text-lg tracking-widest place-content-center">
+                    <a href="#tech_stacks" ><li class="list1" ><span class="font-Pop text-[#c4c4c4] hover:text-white">Stacks</span></li></a>
+                    <a href="#projects"><li class="list2" ><span class="font-Pop text-[#c4c4c4] hover:text-white">Projects</span></li></a>
+                    <a href="#certificates"><li class="list3" ><span class="font-Pop text-[#c4c4c4] hover:text-white" s>Certifications</span></li></a>
                 </ul>
             </div>
             <!-- Left Nav -->
             <div class="hidden flex-1/5 medic:block ">
                 <div class="flex items-end justify-end pe-16">
-                    <button class="bg-[#D9D9D9] rounded-md text-center pb-1 text-lg text-[#231C2F]"> <span
-                            class="px-4 font-display ">Resume</span></button>
+                    <button class="bg-[#D9D9D9] rounded-md text-center py-1 px-3 font-Pop tracking-tighter text-md font-bold text-[#231C2F]"> CV</button>
                 </div>
             </div>
             <!-- Burger -->
@@ -85,26 +84,26 @@
             <div class="flex-1/2">
                 <div class="">
                     <div class="ps-12 ">
-                        <h1 class="pb-10 text-3xl text-white smile:text-5xl font-display pe-12">Angelito Rivera Orbigoso</h1>
+                        <h1 class="pb-10 text-3xl text-white smile:text-5xl font-pt tracking-wide font-display pe-12">Angelito  Orbigoso</h1>
                     </div>
                     <div class="max-w-xl pr-12 ps-12">
-                        <p class="text-sm text-gray-500 smile:text-lg">
+                        <p class="text-sm text-gray-500 smile:text-lg font-PT">
                             Building responsive designs that work well on different devices.
                             I also care about making websites fast and accessible for everyone.
                             My goal is to create projects that not only meet user needs but also help businesses grow.
                         </p>
                     </div>
                     <div>
-                        <p class="pt-4"><span class="text-xl text-white ps-12 font-display">Frontend Developer</span></p>
+                        <p class="pt-4"><span class="text-xl text-white ps-12 font-pt font-display">Frontend Developer</span></p>
                     </div>
                     <div class="pt-6 ps-12">
                         <button class="bg-[#161F83]  text-center pb-1 text-white rounded-lg py-0.5 px-2">
-                            <span class="text-[16px] font-display italic">
+                            <span class="text-[16px] font-pt font-display italic">
                                 Contact me
                             </span>
                         </button>
-                        <button class="ps-4">
-                            <span class="font-display text-[16px] italic text-white">My Projects</span>
+                        <button class="ps-4" id="btnProject">
+                            <span class="font-pt font-display text-[16px] italic text-white">My Projects</span>
                         </button>
                     </div>
                 </div>
@@ -236,7 +235,7 @@
                             Git<br>
                             Github<br>
                             NodeJs<br>
-                            ChatGPT Ai<br>
+                            Netlify<br>
                             VsCode<br>
                         </p>
                     </div>
@@ -265,7 +264,7 @@
                         <p class="pb-2 text-xs italic font-normal text-white">
                             July 2025
                         </p>
-                        <p class="text-xs italic font-normal text-white ghostbreak:text-sm">
+                        <p class="text-xs italic font-PT text-white ghostbreak:text-sm">
                             I earned my BS in Information Technology from Bulacan State Agricultural College (BASC).
                             I wasn’t the top student—I saw college more as a system of expectations than real learning.
                             Still, I’m thankful for the free tuition that helped me complete my degree
@@ -285,12 +284,12 @@
             <h1 class="pt-12 pb-3 ms-12 ">
                 <span class="text-3xl text-white font-display">Projects</span>
             </h1>
-            <p class="pb-12 font-light text-white ms-12 text-md ">
+            <p class="pb-12 font-light text-white ms-12 text-md font-PT">
                 I made these in my spare time for learning purposes or experimentation.
             </p>
             
-            <div class="flex flex-wrap gap-1 ps-12">
-                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+            <div class="flex flex-wrap gap-1 space-y-12 ps-12">
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-48 overflow-hidden">
                         <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
                     </div>
@@ -298,25 +297,17 @@
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>HTML, CSS, Javascript</span></h2>
                     <p class="font-normal text-white text-md">A performance optimized single page application</p>
                 </div>
-                <div class="w-full cardsbasis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-48 overflow-hidden">
-                        <img src="assets/img/1752798249832.jpg" class="object-cover w-full h-full" alt="">
+                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
                     </div>
                     <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
                     <p class="font-normal text-white text-md">A performance optimized single page application</p>
                 </div>
-                <div class="w-full cardsbasis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-48 overflow-hidden">
-                        <img src="assets/img/1752798249832.jpg" class="object-cover w-full h-full" alt="">
-                    </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
-                </div>
-                 <div class="w-full cardsbasis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="assets/img/1752798249832.jpg" class="object-cover w-full h-full" alt="">
+                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
                     </div>
                     <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
@@ -330,6 +321,51 @@
                         All
                         Projects</span>
                 </button>
+            </div>
+        </div>
+    </section>
+    <section id="certificates" class="pb-24">
+        <div class="container">
+            <h1 class="pt-12 pb-3 ms-12 ">
+                <span class="text-3xl text-white font-display">Certificates</span>
+            </h1>
+            <p class="pb-12 font-light text-white ms-12 text-md ">
+                 I’ve never thought my journey would be this fun.
+            </p>
+
+            <div class="flex flex-wrap gap-1 space-y-12 ps-12">
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                    <div class="w-full h-48 overflow-hidden">
+                        <img src="/assets/img/GOOGLE GENERATIVE AI.png" class="object-contain w-full h-full" alt="">
+                    </div>
+                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>HTML, CSS, Javascript</span></h2>
+                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                </div>
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                    <div class="w-full h-48 overflow-hidden">
+                        <img src="/assets/img/CERTIFICATE (2).jpg" class="object-contain w-full h-full" alt="">
+                    </div>
+                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
+                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                </div>
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                    <div class="w-full h-48 overflow-hidden">
+                        <img src="/assets/img/CERTIFICATE (1).jpg" class="object-contain w-full h-full" alt="">
+                    </div>
+                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
+                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                </div>
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                    <div class="w-full h-48 overflow-hidden">
+                        <img src="/assets/img/CERTIFICATE (3).jpg" class="object-contain w-full h-full" alt="">
+                    </div>
+                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
+                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                </div>
             </div>
         </div>
     </section>
@@ -438,6 +474,7 @@
             </div>
         </div>
     </section>
+    <script src="/public/main.js"></script>
 </body>
 
 </html>
