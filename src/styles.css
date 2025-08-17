@@ -2,6 +2,8 @@
 @theme{
     --font-*:initial;
     --font-display: "Etna" , sans-serif;
+    --font-Pop: "Poppins" , sans-serif;
+    --font-PT: "PTSans" , sans-serif;
     --breakpoint-medic : 933px;
     --breakpoint-ghostbreak: 705px;
     --breakpoint-tiny: 580px;
@@ -17,3 +19,18 @@
   font-weight: 10;
   font-style: normal;
 }
+   @font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+  font-display: swap; /* critical for performance */
+  font-weight: 20;
+  font-style: normal;
+}
+     @font-face {
+  font-family: 'PTSans';
+  src: url('/fonts/PTSans-Regular.woff2') format('woff2');
+  font-display: swap; /* critical for performance */
+  font-weight: 100;
+  font-style: normal;
+}
+  
