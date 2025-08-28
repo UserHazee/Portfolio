@@ -27,13 +27,15 @@
             clip-path: polygon(0 0, 0% 0%, 100% 0, 100% 100%, 0% 100%);
         }
     }
+
     @font-face {
-  font-family: 'Etna';
-  src: url('/fonts/Etna.woff2') format('woff2');
-  font-display: swap; /* critical for performance */
-  font-weight: 10;
-  font-style: normal;
-}
+        font-family: 'Etna';
+        src: url('/fonts/Etna.woff2') format('woff2');
+        font-display: swap;
+        /* critical for performance */
+        font-weight: 10;
+        font-style: normal;
+    }
 </style>
 
 <body class="bg-[#0C0F14]">
@@ -41,22 +43,32 @@
         <div class="flex flex-row items-center justify-center gap-10 ">
             <!-- Right Nav -->
             <div class=" flex-1/5">
-                <div class="flex items-start justify-start ps-14">
-                    <a href="index.html"><p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p></a>
+                <div class="flex items-start justify-start ps-8 ">
+                    <a href="index.html">
+                        <p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p>
+                    </a>
                 </div>
             </div>
             <!-- Mid Nav -->
             <div class="hidden flex-1/2 medic:block">
                 <ul class="flex flex-row gap-6 text-lg tracking-widest place-content-center">
-                    <a href="#tech_stacks" ><li class="list1" ><span class="font-Pop text-[#c4c4c4] hover:text-white">Stacks</span></li></a>
-                    <a href="#projects"><li class="list2" ><span class="font-Pop text-[#c4c4c4] hover:text-white">Projects</span></li></a>
-                    <a href="#certificates"><li class="list3" ><span class="font-Pop text-[#c4c4c4] hover:text-white" s>Certifications</span></li></a>
+                    <a href="#tech_stacks">
+                        <li class="list1"><span class="font-Pop text-[#c4c4c4] hover:text-white">Stacks</span></li>
+                    </a>
+                    <a href="#projects">
+                        <li class="list2"><span class="font-Pop text-[#c4c4c4] hover:text-white">Projects</span></li>
+                    </a>
+                    <a href="#certificates">
+                        <li class="list3"><span class="font-Pop text-[#c4c4c4] hover:text-white" s>Certifications</span>
+                        </li>
+                    </a>
                 </ul>
             </div>
             <!-- Left Nav -->
             <div class="hidden flex-1/5 medic:block ">
-                <div class="flex items-end justify-end pe-16">
-                    <button class="bg-[#D9D9D9] rounded-md text-center py-1 px-3 font-Pop tracking-tighter text-md font-bold text-[#231C2F]"> CV</button>
+                <div class="flex items-end justify-end pe-8">
+                    <a class="bg-[#D9D9D9] rounded-md text-center py-1 px-3 font-Pop tracking-tighter text-md font-bold text-[#231C2F]"
+                        href="assets/RESUME.pdf" target="_blank"> CV</a>
                 </div>
             </div>
             <!-- Burger -->
@@ -84,7 +96,8 @@
             <div class="flex-1/2">
                 <div class="">
                     <div class="ps-12 ">
-                        <h1 class="pb-10 text-3xl text-white smile:text-5xl font-pt tracking-wide font-display pe-12">Angelito  Orbigoso</h1>
+                        <h1 class="pb-10 text-3xl text-white smile:text-5xl font-pt tracking-wide font-display pe-12">
+                            Angelito Orbigoso</h1>
                     </div>
                     <div class="max-w-xl pr-12 ps-12">
                         <p class="text-sm text-gray-500 smile:text-lg font-PT">
@@ -94,7 +107,8 @@
                         </p>
                     </div>
                     <div>
-                        <p class="pt-4"><span class="text-xl text-white ps-12 font-pt font-display">Frontend Developer</span></p>
+                        <p class="pt-4"><span class="text-xl text-white ps-12 font-pt font-display">Frontend
+                                Developer</span></p>
                     </div>
                     <div class="pt-6 ps-12">
                         <button class="bg-[#161F83]  text-center pb-1 text-white rounded-lg py-0.5 px-2">
@@ -102,7 +116,7 @@
                                 Contact me
                             </span>
                         </button>
-                        <button class="ps-4" id="btnProject">
+                        <button class="ps-4 cursor-pointer" id="btnProject">
                             <span class="font-pt font-display text-[16px] italic text-white">My Projects</span>
                         </button>
                     </div>
@@ -123,13 +137,14 @@
         </div>
     </main>
 
-    <!-- Skills section --> 
+    <!-- Skills section -->
 
-    <section id="tech_stacks" class="container bg-[#0c0F14] tiny:h-[800px] end:h-[630px] medic:h-[940px] ghostbreak:h-[800px]   pt-14">
-        <h1 class="text-center pb-28"><span class="text-3xl text-white smile:text-5xl font-display">Skills & Tools</span></h1>
+    <section id="tech_stacks"
+        class="container bg-[#0c0F14] tiny:h-[800px] end:h-[630px] medic:h-[940px] ghostbreak:h-[800px]   pt-14">
+        <h1 class="text-center pb-28"><span class="text-3xl text-white smile:text-5xl font-display">Skills &
+                Tools</span></h1>
         <!-- balls stacks -->
-        <div
-            class="bg-[#0c0F14]  flex-row place-content-center hidden medic:flex gap-2 medic:gap-0 h-[135px]">
+        <div class="bg-[#0c0F14]  flex-row place-content-center hidden medic:flex gap-2 medic:gap-0 h-[135px]">
             <div
                 class="ball1 ghostbreak:w-[100px] w-[80px] ghostbreak:h-[100px] h-[80px] bg-[#D9D9D9] rounded-full relative -left-0 medic:-left-40 flex items-center justify-center">
                 <img src="assets/icons/html5-brands-solid-full.svg" alt=""
@@ -171,26 +186,27 @@
                     class="flex-1/2  end:ms-12 ms-0 bg-[#161d2b]  tiny:h-[720px] end:h-[500px] z-0   pt-20 medic:pt-62">
                     <div class="z-1 ">
                         <div
-                            class="flex-row place-content-center hidden tiny:flex  medic:hidden  gap-2 medic:gap-0 h-[135px]">
+                            class="flex-row place-content-center flex  medic:hidden  gap-2 medic:gap-0 h-[50px] tiny:h-[135px]">
                             <div
-                                class="ball1 ghostbreak:w-[100px]  tiny:w-[80px] w-[60px] ghostbreak:h-[100px] tiny:h-[80px] h-[60px] bg-[#D9D9D9] rounded-full relative -left-0 medic:-left-40 flex items-center justify-center">
+                                class="ball1 ghostbreak:w-[100px]  tiny:w-[80px] w-[30px] ghostbreak:h-[100px] tiny:h-[80px] h-[30px] bg-[#D9D9D9] rounded-full relative -left-0 medic:-left-40 flex items-center justify-center">
                                 <img src="assets/icons/html5-brands-solid-full.svg" alt=""
                                     class="ghostbreak:h-[80px] h-[50px]  ghostbreak:w-[80px] w-[50px]">
                             </div>
                             <div
-                                class="ball2 ghostbreak:w-[100px] tiny:w-[80px] w-[60px] ghostbreak:h-[100px] tiny:h-[80px] h-[60px] bg-[#D9D9D9] rounded-full -top-0  medic:-top-20 relative -left-0 medic:-left-12 flex  items-center justify-center">
+                                class="ball2 ghostbreak:w-[100px] tiny:w-[80px] w-[30px] ghostbreak:h-[100px] tiny:h-[80px] h-[30px] bg-[#D9D9D9] rounded-full -top-0  medic:-top-20 relative -left-0 medic:-left-12 flex  items-center justify-center">
                                 <img src="assets/icons/icons8-javascript.svg" alt=""
                                     class="ghostbreak:h-[80px] h-[50px]  ghostbreak:w-[80px] w-[50px]">
                             </div>
                             <div
-                                class="ball3 ghostbreak:w-[100px] tiny:w-[80px] w-[60px] ghostbreak:h-[100px] tiny:h-[80px] h-[60px] bg-[#D9D9D9] rounded-full relative medic:left-13  left-0 flex  items-center justify-center">
+                                class="ball3 ghostbreak:w-[100px] tiny:w-[80px] w-[30px] ghostbreak:h-[100px] tiny:h-[80px] h-[30px] bg-[#D9D9D9] rounded-full relative medic:left-13  left-0 flex  items-center justify-center">
 
                                 <img src="assets/icons/css3-alt-brands-solid-full.svg" alt=""
                                     class="ghostbreak:h-[80px] h-[50px]  ghostbreak:w-[80px] w-[50px]">
                             </div>
                         </div>
                         <p class="pb-4">
-                            <span class="text-sm text-white smile:text-lg tiny:text-2xl medic:text-4xl font-display ps-4 smile:ps-8">Front
+                            <span
+                                class="text-sm text-white smile:text-lg tiny:text-2xl medic:text-4xl font-display ps-4 smile:ps-8">Front
                                 End
                                 Stacks</span>
                         </p>
@@ -204,30 +220,30 @@
                     </div>
                 </div>
 
-                <div
-                    class="flex-1/2 end:me-12 me-0 bg-[#161d2b] tiny:h-[720px] end:h-[500px] z-0 medic:pt-62 pt-20">
+                <div class="flex-1/2 end:me-12 me-0 bg-[#161d2b] tiny:h-[720px] end:h-[500px] z-0 medic:pt-62 pt-20">
                     <div class="z-1 ">
                         <div
-                            class="flex-row place-content-center  hidden tiny:flex   medic:hidden  gap-2 medic:gap-0 h-[135px]">
+                            class="flex-row place-content-center  flex   medic:hidden  gap-2 medic:gap-0 h-[50px] tiny:h-[135px]">
                             <div
-                                class="ball1 ghostbreak:w-[100px] tiny:w-[80px] w-[60px] ghostbreak:h-[100px] tiny:h-[80px] h-[60px] bg-[#D9D9D9] rounded-full relative -left-0 medic:-left-40 flex items-center justify-center">
+                                class="ball1 ghostbreak:w-[100px] tiny:w-[80px] w-[30px] ghostbreak:h-[100px] tiny:h-[80px] h-[30px] bg-[#D9D9D9] rounded-full relative -left-0 medic:-left-40 flex items-center justify-center">
                                 <img src="assets/icons/icons8-tailwind-css.svg" alt=""
                                     class="ghostbreak:h-[80px] h-[50px]  ghostbreak:w-[80px] w-[50px]">
                             </div>
                             <div
-                                class="ball2 ghostbreak:w-[100px]  tiny:w-[80px] w-[60px] ghostbreak:h-[100px] tiny:h-[80px] h-[60px] bg-[#D9D9D9] rounded-full -top-0  medic:-top-20 relative -left-0 medic:-left-12 flex  items-center justify-center">
+                                class="ball2 ghostbreak:w-[100px]  tiny:w-[80px] w-[30px] ghostbreak:h-[100px] tiny:h-[80px] h-[30px] bg-[#D9D9D9] rounded-full -top-0  medic:-top-20 relative -left-0 medic:-left-12 flex  items-center justify-center">
                                 <img src="assets/icons/git-alt-brands-solid-full.svg" alt=""
                                     class="ghostbreak:h-[80px] h-[50px]  ghostbreak:w-[80px] w-[50px]">
                             </div>
                             <div
-                                class="ball3 ghostbreak:w-[100px]  tiny:w-[80px] w-[60px] ghostbreak:h-[100px] tiny:h-[80px] h-[60px] bg-[#D9D9D9] rounded-full relative medic:left-13  left-0 flex  items-center justify-center">
+                                class="ball3 ghostbreak:w-[100px]  tiny:w-[80px] w-[30px] ghostbreak:h-[100px] tiny:h-[80px] h-[30px] bg-[#D9D9D9] rounded-full relative medic:left-13  left-0 flex  items-center justify-center">
 
                                 <img src="assets/icons/github-brands-solid-full.svg" alt=""
                                     class="ghostbreak:h-[80px] h-[50px]  ghostbreak:w-[80px] w-[50px]">
                             </div>
                         </div>
                         <p class="pb-4">
-                            <span class="text-sm text-white smile:text-lg tiny:text-2xl medic:text-4xl font-display ps-4 smile:ps-8">Other
+                            <span
+                                class="text-sm text-white smile:text-lg tiny:text-2xl medic:text-4xl font-display ps-4 smile:ps-8">Other
                                 Tech
                                 Tools</span>
                         </p>
@@ -251,17 +267,18 @@
             <h1 class="text-center pt-30 tiny:pt-40"><span
                     class="text-xl text-white tiny:text-4xl font-display">Education</span></h1>
             <div class="flex items-center justify-center mx-12 ">
-                <div class="flex flex-row items-center justify-center gap-5 pt-2 ghostbreak:items-end ghostbreak:justify-end ">
-                <div class="items-center justify-center hidden tiny:flex pe-4 flex-4/6">
-                    <div
-                        class="bg-[#D9D9D9] rounded-full  w-[70px] h-[70px] tiny:w-[100px] tiny:h-[100px] flex items-center justify-center ">
-                        <img src="assets/icons/graduation-cap-solid-full.svg"
-                            class="tiny:h-[50px] tiny:w-[50px] h-[40px] w-[40px] " alt="">
+                <div
+                    class="flex flex-row items-center justify-center gap-5 pt-2 ghostbreak:items-end ghostbreak:justify-end ">
+                    <div class="items-center justify-center hidden tiny:flex pe-4 flex-4/6">
+                        <div
+                            class="bg-[#D9D9D9] rounded-full  w-[70px] h-[70px] tiny:w-[100px] tiny:h-[100px] flex items-center justify-center ">
+                            <img src="assets/icons/graduation-cap-solid-full.svg"
+                                class="tiny:h-[50px] tiny:w-[50px] h-[40px] w-[40px] " alt="">
+                        </div>
                     </div>
-                </div>
-            
+
                     <div class="max-w-xl pr-0 ghostbreak:pr-12 ghostbreak:ps-12 ps-0 ">
-                        <p class="pb-2 text-xs italic font-normal text-white">
+                        <p class="pb-2 text-xs italic font-Pop  text-white">
                             July 2025
                         </p>
                         <p class="text-xs italic font-PT text-white ghostbreak:text-sm">
@@ -271,9 +288,9 @@
                             with less financial pressure.
                         </p>
                     </div>
+                </div>
             </div>
-            </div>        
-            
+
         </div>
     </section>
 
@@ -287,31 +304,32 @@
             <p class="pb-12 font-light text-white ms-12 text-md font-PT">
                 I made these in my spare time for learning purposes or experimentation.
             </p>
-            
-            <div class="flex flex-wrap gap-1 space-y-12 ps-12">
+
+            <div class="flex flex-wrap gap-4 space-y-12 ps-12">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="assets/img/BTApngProject.png" class="object-cover w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>HTML, CSS, Javascript</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>BTA-Ecommerce Website</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, Javascript</span></h2>
+                    <p class="font-Pop  text-white text-sm">A responsive ecommerce website using session and local
+                        storage for cart system with no database</p>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
-                    <div class="w-full h-48 overflow-hidden">
+                    <div class="w-full h-58.5 overflow-hidden">
                         <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>Portfolio Website</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, Javascript</span></h2>
+                    <p class="font-Pop  text-white text-sm">A performance optimized single page application</p>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="assets/img/TASKUDEM.png" class="object-cover w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
+                    <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>Portfolio Website</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <p class="font-Pop  text-white text-sm">A performance optimized single page application</p>
                 </div>
             </div>
             <div class="flex items-center justify-center pt-24">
@@ -330,41 +348,50 @@
                 <span class="text-3xl text-white font-display">Certificates</span>
             </h1>
             <p class="pb-12 font-light text-white ms-12 text-md ">
-                 I’ve never thought my journey would be this fun.
+                I’ve never thought my journey would be this fun.
             </p>
 
-            <div class="flex flex-wrap gap-1 space-y-12 ps-12">
+            <div class="flex flex-wrap gap-4 space-y-12 ps-12">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="/assets/img/GOOGLE GENERATIVE AI.png" class="object-contain w-full h-full" alt="">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="/assets/img/IBM-cert.png" class="object-contain w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>HTML, CSS, Javascript</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>IBM Web Development Fundametals</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>IBM, -SkillsBuild</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="/assets/img/CERTIFICATE (2).jpg" class="object-contain w-full h-full" alt="">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="/assets/img/CERT-1.png" class="object-contain w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Complete Web Designing Course | Web
+                            Development BootCamp</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Faisal Zamir, Jafri Code -Udemy</span>
+                    </h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="/assets/img/CERTIFICATE (1).jpg" class="object-contain w-full h-full" alt="">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="/assets/img/HTMLCERT.png" class="object-contain w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Mastering HTML5: From Beginner to Advanced
+                            2025</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Mehmood Khalil, Zaheer Irshad,
+                            -Udemy</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-48 overflow-hidden">
-                        <img src="/assets/img/CERTIFICATE (3).jpg" class="object-contain w-full h-full" alt="">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="/assets/img/CSSCERT.png" class="object-contain w-full h-full" alt="">
                     </div>
-                    <h1 class="pt-4 text-xl font-medium text-white"><span>Portfolio Website</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
-                    <p class="font-normal text-white text-md">A performance optimized single page application</p>
+                    <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>CSS Fundamentals: Comprehensive Training For
+                            Web Developers</span></h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Mehmood Khalil, -Udemy</span></h2>
+                </div>
+                <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
+                    <div class="w-full h-58.5 overflow-hidden">
+                        <img src="/assets/img/GOOGLECERT.png" class="object-contain w-full h-full" alt="">
+                    </div>
+                    <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Introduction to Generative AI Studio</span>
+                    </h1>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Google Cloud, -Simplelearn</span></h2>
                 </div>
             </div>
         </div>
@@ -384,9 +411,9 @@
                     </div>
                     <!-- Left Side Foothead -->
                     <div class="flex-1/2 ">
-                        <div class="flex items-end justify-end pt-4 pe-16">
-                            <button class="bg-[#D9D9D9] rounded-md text-center pb-1 text-lg text-[#231C2F]"> <span
-                                    class="px-4 font-display ">Resume</span></button>
+                        <div class="flex items-end justify-end pe-16">
+                            <a class="bg-[#D9D9D9] rounded-md text-center py-1 px-3 mt-3 font-Pop tracking-tighter text-md font-bold text-[#231C2F]"
+                                href="assets/RESUME.pdf" target="_blank"> CV</a>
                         </div>
                     </div>
                 </div>
