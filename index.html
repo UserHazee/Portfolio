@@ -43,7 +43,7 @@
         <div class="flex flex-row items-center justify-center gap-10 ">
             <!-- Right Nav -->
             <div class=" flex-1/5">
-                <div class="flex items-start justify-start ps-8 ">
+                <div class="flex items-start justify-start ps-8 mt-1 ">
                     <a href="index.html">
                         <p class="text-5xl text-[#D9D9D9]"><span class="font-display ">&lt;AO/&gt;</span></p>
                     </a>
@@ -51,7 +51,7 @@
             </div>
             <!-- Mid Nav -->
             <div class="hidden flex-1/2 medic:block">
-                <ul class="flex flex-row gap-6 text-lg tracking-widest place-content-center">
+                <ul class="nav flex flex-row gap-6 text-lg tracking-widest place-content-center">
                     <a href="#tech_stacks">
                         <li class="list1"><span class="font-Pop text-[#c4c4c4] hover:text-white">Stacks</span></li>
                     </a>
@@ -74,7 +74,7 @@
             <!-- Burger -->
             <div class="block flex-1/5 medic:hidden">
                 <div class="flex justify-end pe-14 end:pe-6">
-                    <svg viewBox="0 0 24 24" fill="none" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="menu-toggle" viewBox="0 0 24 24" fill="none" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -87,6 +87,16 @@
             </div>
         </div>
     </header>
+    <aside id="sidebar"
+    class="fixed top-0 right-0 h-full w-64 bg-gray-900 text-white p-6 transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <button id="close-btn" class="absolute top-4 right-4 text-2xl">&times;</button>
+
+    <ul class="space-y-6 mt-12">
+      <li><a href="#tech_stacks" class="block hover:text-gray-400">Stacks</a></li>
+      <li><a href="#projects" class="block hover:text-gray-400">Projects</a></li>
+      <li><a href="#certificates" class="block hover:text-gray-400">Certification</a></li>
+    </ul>
+    </aside>
 
     <!-- Main -->
 
@@ -111,13 +121,13 @@
                                 Developer</span></p>
                     </div>
                     <div class="pt-6 ps-12">
-                        <button class="bg-[#161F83]  text-center pb-1 text-white rounded-lg py-0.5 px-2">
-                            <span class="text-[16px] font-pt font-display italic">
+                        <a href="#footer" class="bg-[#161F83]  text-center pt-1.5 pb-2 text-white rounded-lg  px-4">
+                            <span class="text-[16px] font-Pop  italic">
                                 Contact me
                             </span>
-                        </button>
+                        </a>
                         <button class="ps-4 cursor-pointer" id="btnProject">
-                            <span class="font-pt font-display text-[16px] italic text-white">My Projects</span>
+                            <span class="font-Pop text-[16px] italic text-white">My Projects >></span>
                         </button>
                     </div>
                 </div>
@@ -301,11 +311,11 @@
             <h1 class="pt-12 pb-3 ms-12 ">
                 <span class="text-3xl text-white font-display">Projects</span>
             </h1>
-            <p class="pb-12 font-light text-white ms-12 text-md font-PT">
+            <p class="pb-12 font-light text-white ms-12 text-md pe-5 font-PT">
                 I made these in my spare time for learning purposes or experimentation.
             </p>
 
-            <div class="flex flex-wrap gap-4 space-y-12 ps-12">
+            <div class="flex flex-wrap gap-4 space-y-12 ps-12 ">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-58.5 overflow-hidden">
                         <img src="assets/img/BTApngProject.png" class="object-cover w-full h-full" alt="">
@@ -347,7 +357,7 @@
             <h1 class="pt-12 pb-3 ms-12 ">
                 <span class="text-3xl text-white font-display">Certificates</span>
             </h1>
-            <p class="pb-12 font-light text-white ms-12 text-md ">
+            <p class="pb-12 font-light text-white ms-12 text-md pe-5 ">
                 I’ve never thought my journey would be this fun.
             </p>
 
@@ -399,7 +409,7 @@
 
     <!-- Section Footer -->
 
-    <section id="section" class="bg-[#121720] container pb-12">
+    <section id="footer" class="bg-[#121720] container pb-12">
         <div class="container">
             <div class="footheader">
                 <div class="flex flex-row items-center justify-center pt-4">
@@ -412,7 +422,7 @@
                     <!-- Left Side Foothead -->
                     <div class="flex-1/2 ">
                         <div class="flex items-end justify-end pe-16">
-                            <a class="bg-[#D9D9D9] rounded-md text-center py-1 px-3 mt-3 font-Pop tracking-tighter text-md font-bold text-[#231C2F]"
+                            <a class="bg-[#D9D9D9] rounded-md text-center py-1 px-3 mt-2 font-Pop tracking-tighter text-md font-bold text-[#231C2F]"
                                 href="assets/RESUME.pdf" target="_blank"> CV</a>
                         </div>
                     </div>
@@ -430,6 +440,7 @@
 
                 </div>
                 <div class="flex flex-row gap-3 pt-8 place-content-center">
+                    <a href="https://github.com/UserHazees" target="_blank">
                     <svg viewBox="0 0 20 20" version="1.1" width="50" height="40" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -450,6 +461,8 @@
                             </g>
                         </g>
                     </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/orbigoso-angelito-bb7027378/" target="_blank">
                     <svg viewBox="0 0 20 20" version="1.1" width="50" height="40" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -469,7 +482,8 @@
                                 </g>
                             </g>
                         </g>
-                    </svg>
+                    </svg></a>
+                    <a href="https://www.facebook.com/angelito.orbigoso/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
                         style="fill:#1A1A1A;">
                         <g fill="#d9d9d9" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -482,7 +496,8 @@
                                 </path>
                             </g>
                         </g>
-                    </svg>
+                    </svg></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelitorivera178@gmail.com" target="_blank">
                     <svg viewBox="0 0 24 24" fill="none" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -495,7 +510,7 @@
                                 </g>
                             </g>
                         </g>
-                    </svg>
+                    </svg></a>
                 </div>
 
             </div>
