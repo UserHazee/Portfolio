@@ -139,8 +139,14 @@
             <div class="hidden flex-1/2 medic:block ">
                 <div class="flex items-center justify-center">
                     <div class=" medic:w-[320px] w-[250px] medic:h-[320px] h-[300px] absolute z-1">
-                        <img src="assets/img/1752798249832.jpg" alt="" class="w-full h-full">
-
+                        <picture>
+                            <source
+                            type="image/webp">
+                            
+            <!-- Fallback for browsers that don’t support WebP -->
+                             <img src="assets/img/1752798249832.webp" alt="" class="w-full h-full" fetchpriority="high" loading="eager">
+                        </picture>
+                       
                     </div>
                     <div
                         class="bg-[#0A192F]  medic:w-[320px] w-[250px] medic:h-[320px] h-[300px] relative z-0 left-4 top-4">
@@ -321,7 +327,20 @@
             <div class="flex flex-wrap gap-4 space-y-12 ps-12 ">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="assets/img/BTApngProject.png" class="object-cover w-full h-full" alt="">
+                        <picture>
+                            <source srcset="assets/img/BTApngProject_small.webp 400w, assets/img/BTApngProject_mid.webp 800w"
+                            sizes="(max-width: 600px) 400px, 
+                                   (max-width: 1200px) 800px, 1920px"
+                                   type="image/webp">
+
+                            <source srcset="assets/img/BTApngProject_small.png 400w, assets/img/BTApngProject_mid.png 800w" 
+                             sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1920px" 
+                             type="image/png">
+
+                            
+                            <img src="assets/img/BTApngProject.png" class="object-cover w-full h-full" alt="Graduate celebrating at a university commencement." loading="lazy" decoding="async" width="1920" height="1087">
+                        </picture>
+                        
                     </div>
                     <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>BTA-Ecommerce
                             Website</span></h1>
@@ -331,7 +350,18 @@
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt="">
+
+                    <picture>
+                        <source srcset="assets/img/Untitled design_small.webp 400w, assets/img/Untitled design_small.webp 800w"
+                        sizes="(max-width: 600px) 400px,
+                               (max-width: 1200px) 800px, 1920px"
+                        type="image/webp">
+                        <source srcset="assets/img/Untitled design_small.jpg 400w, assets/img/Untitled design_small.jpg 800w"
+                        sizes="(max-width: 600px) 400px,
+                               (max-width: 1200px) 800px, 1920px"
+                        type="image/jpg">
+                    </picture>
+                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt= "" loading="lazy" decoding="async">
                     </div>
                     <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>Portfolio
                             Website</span></h1>
@@ -340,8 +370,8 @@
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="assets/img/TASKUDEM.png" class="object-cover w-full h-full" alt="">
-                    </div>
+                        <img src="assets/img/TASKUDEM.webp" class="object-cover w-full h-full" alt="" loading="lazy">
+                     </div>
                     <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>Portfolio
                             Website</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
@@ -370,16 +400,16 @@
             <div class="flex flex-wrap gap-4 space-y-12 ps-12">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/IBM-cert.png" class="object-contain w-full h-full" alt="">
-                    </div>
+                        <img src="/assets/img/IBM-cert.webp" class="object-contain w-full h-full" alt="" loading="lazy">
+                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>IBM Web Development
                             Fundametals</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>IBM, -SkillsBuild</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/CERT-1.png" class="object-contain w-full h-full" alt="">
-                    </div>
+                        <img src="/assets/img/CERT-1.webp" class="object-contain w-full h-full" alt="" loading="lazy">
+                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Complete Web Designing Course | Web
                             Development BootCamp</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Faisal Zamir, Jafri Code -Udemy</span>
@@ -387,16 +417,16 @@
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/cert-JSE.png" class="object-contain w-full h-full" alt="">
-                    </div>
+                        <img src="/assets/img/cert-JSE.webp" class="object-contain w-full h-full" alt="" loading="lazy">
+                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Javascript Essentials 1</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Joleybev Ordiz DICT-ITU DTC Initiative,
                             -Cisco Networking Academy Program</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/HTMLCERT.png" class="object-contain w-full h-full" alt="">
-                    </div>
+                        <img src="/assets/img/HTMLCERT.webp" class="object-contain w-full h-full" alt="" loading="lazy">
+                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Mastering HTML5: From Beginner to
                             Advanced
                             2025</span></h1>
@@ -405,8 +435,8 @@
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/CSSCERT.png" class="object-contain w-full h-full" alt="">
-                    </div>
+                        <img src="/assets/img/CSSCERT.webp" class="object-contain w-full h-full" alt="" loading="lazy">
+                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>CSS Fundamentals: Comprehensive
                             Training For
                             Web Developers</span></h1>
@@ -414,7 +444,7 @@
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
                     <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/GOOGLECERT.png" class="object-contain w-full h-full" alt="">
+                        <img src="/assets/img/GOOGLECERT.webp" class="object-contain w-full h-full" alt="" loading="lazy" >
                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Introduction to Generative AI
                             Studio</span>
