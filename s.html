@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srcset Test</title>
+  <style>
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Force smaller container to see the switch */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      border: 2px dashed red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   <picture>
+  <!-- WebP first (modern browsers) -->
+  <source 
+    srcset="
+      assets/img/Untitled-design-800.webp 800w,
+      assets/img/Untitled-design-1920.webp 1920w"
+    sizes="100vw"
+    type="image/webp">
+
+  <!-- JPEG/PNG fallback (older browsers) -->
+  <source 
+    srcset="
+      assets/img/Untitled-design-800.jpg 800w,
+      assets/img/Untitled-design-1920.jpg 1920w"
+    sizes="100vw"
+    type="image/jpeg">
+
+  <!-- Default fallback image -->
+  <img 
+    src="assets/img/PORTSS.png" 
+    alt="Graduate celebrating at a university commencement." 
+    class="object-cover w-full h-full"
+    width="1920" height="1087"
+    loading="lazy" decoding="async">
+</picture>
+
+  </div>
+</body>
+</html>

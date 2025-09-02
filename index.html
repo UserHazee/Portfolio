@@ -38,7 +38,7 @@
     }
 </style>
 
-<body class="bg-[#0C0F14]">
+<body class="bg-[#0c0F14]">
     <header class=" py-2 bg-[#0c0F14] pb-26">
         <div class="flex flex-row items-center justify-center gap-10 ">
             <!-- Right Nav -->
@@ -103,7 +103,7 @@
 
     <!-- Main -->
 
-    <main class="container bg-[#0c0F14] h-[400px]">
+    <main class="container bg-[#0c0F14] h-[400px] ">
         <div class="flex flex-row ">
             <!-- right side main -->
             <div class="flex-1/2">
@@ -140,13 +140,13 @@
                 <div class="flex items-center justify-center">
                     <div class=" medic:w-[320px] w-[250px] medic:h-[320px] h-[300px] absolute z-1">
                         <picture>
-                            <source
-                            type="image/webp">
-                            
-            <!-- Fallback for browsers that don’t support WebP -->
-                             <img src="assets/img/1752798249832.webp" alt="" class="w-full h-full" fetchpriority="high" loading="eager">
+                            <source type="image/webp">
+
+                            <!-- Fallback for browsers that don’t support WebP -->
+                            <img src="assets/img/1752798249832.webp" alt="" class="w-full h-full" fetchpriority="high"
+                                loading="eager">
                         </picture>
-                       
+
                     </div>
                     <div
                         class="bg-[#0A192F]  medic:w-[320px] w-[250px] medic:h-[320px] h-[300px] relative z-0 left-4 top-4">
@@ -159,7 +159,7 @@
     <!-- Skills section -->
 
     <section id="tech_stacks"
-        class="container bg-[#0c0F14] tiny:h-[800px] end:h-[630px] medic:h-[940px] ghostbreak:h-[800px]   pt-14">
+        class="container bg-[#0c0F14] tiny:h-[800px] end:h-[630px] medic:h-[940px] ghostbreak:h-[800px] pt-14 ">
         <h1 class="text-center pb-28"><span class="text-3xl text-white smile:text-5xl font-display">Skills &
                 Tools</span></h1>
         <!-- balls stacks -->
@@ -281,7 +281,7 @@
 
     <!-- Section Education  -->
 
-    <section id="educ" class="bg-[#121720] h-[380px] container">
+    <section id="educ" class="bg-[#121720] h-[380px] container mt-25">
         <div class="container ">
             <h1 class="text-center pt-30 tiny:pt-40"><span
                     class="text-xl text-white tiny:text-4xl font-display">Education</span></h1>
@@ -315,7 +315,7 @@
 
     <!-- Section Project -->
 
-    <section id="projects" class="pb-24">
+    <section id="projects" class="pb-24 pt-14">
         <div class="container">
             <h1 class="pt-12 pb-3 ms-12 ">
                 <span class="text-3xl text-white font-display">Projects</span>
@@ -326,21 +326,32 @@
             <!-- there goes the card -->
             <div class="flex flex-wrap gap-4 space-y-12 ps-12 ">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
-                    <div class="w-full h-58 overflow-hidden">
+                    <div class="w-full">
                         <picture>
-                            <source srcset="assets/img/BTApngProject_small.webp 400w, assets/img/BTApngProject_mid.webp 800w"
-                            sizes="(max-width: 600px) 400px, 
-                                   (max-width: 1200px) 800px, 1920px"
-                                   type="image/webp">
+                            <!-- Modern Browser (WebP) -->
+                            <source srcset="
+                                    assets/img/BTASS-400.webp 400w,
+                                    assets/img/BTASS-800.webp 800w,
+                                    assets/img/BTASS-web.webp 1920w" 
+                                    sizes="(max-width: 600px) 400px,
+                                           (max-width: 1200px) 800px,
+                                            1920px" type="image/webp">
 
-                            <source srcset="assets/img/BTApngProject_small.png 400w, assets/img/BTApngProject_mid.png 800w" 
-                             sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1920px" 
-                             type="image/png">
+                            <!-- Fallback (PNG) -->
+                            <source srcset="
+                                    assets/img/BTASS-400.png 400w,
+                                    assets/img/BTASS-800.png 800w,
+                                    assets/img/BTASS.png 1920w" 
+                                    sizes="(max-width: 600px) 400px,
+                                           (max-width: 1200px) 800px,
+                                           1920px" type="image/png">
 
-                            
-                            <img src="assets/img/BTApngProject.png" class="object-cover w-full h-full" alt="Graduate celebrating at a university commencement." loading="lazy" decoding="async" width="1920" height="1087">
+                            <!-- Default fallback -->
+                            <img src="assets/img/BTASS.png" alt="Graduate celebrating at a university commencement."
+                                class="object-cover w-full h-auto" loading="lazy" decoding="async" width="1920"
+                                height="1087">
                         </picture>
-                        
+
                     </div>
                     <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>BTA-Ecommerce
                             Website</span></h1>
@@ -349,19 +360,28 @@
                         storage for cart system with no database</p>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
-                    <div class="w-full h-58 overflow-hidden">
-
-                    <picture>
-                        <source srcset="assets/img/Untitled design_small.webp 400w, assets/img/Untitled design_small.webp 800w"
-                        sizes="(max-width: 600px) 400px,
-                               (max-width: 1200px) 800px, 1920px"
-                        type="image/webp">
-                        <source srcset="assets/img/Untitled design_small.jpg 400w, assets/img/Untitled design_small.jpg 800w"
-                        sizes="(max-width: 600px) 400px,
-                               (max-width: 1200px) 800px, 1920px"
-                        type="image/jpg">
-                    </picture>
-                        <img src="assets/img/Untitled design.jpg" class="object-cover w-full h-full" alt= "" loading="lazy" decoding="async">
+                    <div class="w-full ">
+                        <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/PORTSS-400.webp 400w,
+                            assets/img/PORTSS-800.webp 800w,
+                            assets/img/PORTSS-1920.webp 1920w"
+                            sizes="(max-width: 600px) 400px,
+                                   (max-width: 1200px) 800px , 1920px"
+                            type="image/webp">
+                               <!-- Fallback (PNG) -->
+                            <source src="
+                            assets/img/PORTSS-400.png 400w,
+                            assets/img/PORTSS-800.png 800w,
+                            assets/img/PORTSS.png 1920w"
+                            sizes="(max-width: 600px) 400px,
+                                   (max-width: 1200px) 800px , 1920px"
+                            type="image/webp">
+                               
+                            <img src="assets/img/PORTSS.png" class="object-cover w-full h-auto" alt="" loading="lazy"
+                                decoding="async" width="1920" height="1087">
+                        </picture>
                     </div>
                     <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>Portfolio
                             Website</span></h1>
@@ -369,9 +389,29 @@
                     <p class="font-Pop  text-white text-sm">A performance optimized single page application</p>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%]  ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="assets/img/TASKUDEM.webp" class="object-cover w-full h-full" alt="" loading="lazy">
-                     </div>
+                    <div class="w-full">
+                         <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/PORTSS-400.webp 400w,
+                            assets/img/PORTSS-800.webp 800w,
+                            assets/img/PORTSS-1920.webp 1920w"
+                            sizes="(max-width: 600px) 400px,
+                                   (max-width: 1200px) 800px , 1920px"
+                            type="image/webp">
+                               <!-- Fallback (PNG) -->
+                            <source src="
+                            assets/img/PORTSS-400.png 400w,
+                            assets/img/PORTSS-800.png 800w,
+                            assets/img/PORTSS.png 1920w"
+                            sizes="(max-width: 600px) 400px,
+                                   (max-width: 1200px) 800px , 1920px"
+                            type="image/webp">
+                               
+                            <img src="assets/img/PORTSS.png" class="object-cover w-full h-auto" alt="" loading="lazy"
+                                decoding="async" width="1920" height="1087">
+                        </picture>
+                    </div>
                     <h1 class="pt-4 text-lg tracking-wide font-PT font-semibold text-white"><span>Portfolio
                             Website</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>TailwindCSS, CSS, MongoDB</span></h2>
@@ -399,34 +439,106 @@
 
             <div class="flex flex-wrap gap-4 space-y-12 ps-12">
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/IBM-cert.webp" class="object-contain w-full h-full" alt="" loading="lazy">
-                     </div>
+                    <div class="w-full">
+                        <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/IBM-cert-400.webp 400w,
+                            assets/img/IBM-cert-800.webp 800w,
+                            assets/img/IBM-cert.webp 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/webp"> 
+                            <!-- Fallback (Png) -->
+                            <source src="
+                            assets/img/IBM-cert-400.png 400w,
+                            assets/img/IBM-cert-800.png 800w,
+                            assets/img/IBM-cert.png 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/png">
+                             <img src="/assets/img/IBM-cert.webp" class="object-contain w-full h-auto" width="1920" height="1087" alt="" decoding="async" loading="lazy">
+                        </picture>
+                    </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>IBM Web Development
                             Fundametals</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>IBM, -SkillsBuild</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/CERT-1.webp" class="object-contain w-full h-full" alt="" loading="lazy">
-                     </div>
+                    <div class="w-full">
+                        <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/CERT-1-400.webp 400w,
+                            assets/img/CERT-1-800.webp 800w,
+                            assets/img/CERT-1-webp 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/webp"> 
+                            <!-- Fallback (Png) -->
+                            <source src="
+                            assets/img/CERT-1-400.png 400w,
+                            assets/img/CERT-1-800.png 800w,
+                            assets/img/CERT-1.png 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/png">
+                             <img src="/assets/img/CERT-1-webp.webp" class="object-contain w-full h-auto" width="1920" height="1087" alt="" decoding="async" loading="lazy">
+                        </picture>
+                       
+                    </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Complete Web Designing Course | Web
                             Development BootCamp</span></h1>
-                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Faisal Zamir, Jafri Code -Udemy</span>
-                    </h2>
+                    <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Faisal Zamir, Jafri Code -Udemy</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/cert-JSE.webp" class="object-contain w-full h-full" alt="" loading="lazy">
-                     </div>
+                    <div class="w-full">
+                        <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/cert-JSE-400.webp 400w,
+                            assets/img/cert-JSE-800.webp 800w,
+                            assets/img/cert-JSE.webp 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/webp"> 
+                            <!-- Fallback (Png) -->
+                            <source src="
+                            assets/img/cert-JSE-400.png 400w,
+                            assets/img/cert-JSE-800.png 800w,
+                            assets/img/cert-JSE.png 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/png">
+                             <img src="/assets/img/cert-JSE.webp" class="object-contain w-full h-auto" width="1920" height="1087" alt="" decoding="async" loading="lazy">
+                        </picture>
+                    </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Javascript Essentials 1</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Joleybev Ordiz DICT-ITU DTC Initiative,
                             -Cisco Networking Academy Program</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/HTMLCERT.webp" class="object-contain w-full h-full" alt="" loading="lazy">
-                     </div>
+                    <div class="w-full">
+                        <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/HTMLCERT-400.webp 400w,
+                            assets/img/HTMLCERT-800.webp 800w,
+                            assets/img/HTMLCERT.webp 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/webp"> 
+                            <!-- Fallback (Png) -->
+                            <source src="
+                            assets/img/HTMLCERT-400.png 400w,
+                            assets/img/HTMLCERT-800.png 800w,
+                            assets/img/HTMLCERT.png 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/png">
+                             <img src="/assets/img/HTMLCERT.webp" class="object-contain w-full h-auto" width="1920" height="1087" alt="" decoding="async" loading="lazy">
+                        </picture>
+                    </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Mastering HTML5: From Beginner to
                             Advanced
                             2025</span></h1>
@@ -434,17 +546,53 @@
                             -Udemy</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/CSSCERT.webp" class="object-contain w-full h-full" alt="" loading="lazy">
-                     </div>
+                    <div class="w-full">
+                         <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/CSSCERT-400.webp 400w,
+                            assets/img/CSSCERT-800.webp 800w,
+                            assets/img/CSSCERT.webp 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/webp"> 
+                            <!-- Fallback (Png) -->
+                            <source src="
+                            assets/img/CSSCERT-400.png 400w,
+                            assets/img/CSSCERT-800.png 800w,
+                            assets/img/CSSCERT.png 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/png">
+                             <img src="/assets/img/CSSCERT.webp" class="object-contain w-full h-auto" width="1920" height="1087" alt="" decoding="async" loading="lazy">
+                        </picture>
+                    </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>CSS Fundamentals: Comprehensive
                             Training For
                             Web Developers</span></h1>
                     <h2 class="pb-2 text-sm text-gray-500 font-display"><span>Mehmood Khalil, -Udemy</span></h2>
                 </div>
                 <div class="w-full cards basis-[90%]  tiny:basis-[47%] medic:basis-[32%] ">
-                    <div class="w-full h-58 overflow-hidden">
-                        <img src="/assets/img/GOOGLECERT.webp" class="object-contain w-full h-full" alt="" loading="lazy" >
+                    <div class="w-full">
+                         <picture>
+                            <!-- Modern Browser (WebP) -->
+                            <source src="
+                            assets/img/GOOGLECERT-400.webp 400w,
+                            assets/img/GOOGLECERT-800.webp 800w,
+                            assets/img/GOOGLECERT.webp 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/webp"> 
+                            <!-- Fallback (Png) -->
+                            <source src="
+                            assets/img/GOOGLECERT-400.png 400w,
+                            assets/img/GOOGLECERT-800.png 800w,
+                            assets/img/GOOGLECERT.png 1920w"
+                            sizes="(max-width: 600px) 400px
+                                    (max-width: 1200px) 800px, 1920px"
+                            type="image/png">
+                             <img src="/assets/img/GOOGLECERT.webp" class="object-contain w-full h-auto" width="1920" height="1087" alt="" decoding="async" loading="lazy">
+                        </picture>
                     </div>
                     <h1 class="pt-4 text-lg font-PT font-semibold text-white"><span>Introduction to Generative AI
                             Studio</span>
