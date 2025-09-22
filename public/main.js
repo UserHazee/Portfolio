@@ -36,3 +36,11 @@ buttonProject.addEventListener('click', function(){
         closeSidebar();
       }
     });
+
+      const myImage = document.getElementById('myImage');
+    myImage.addEventListener('mouseenter', () => {
+        myImage.src = 'assets/img/JUMPSCARE.webp';
+    });
+    myImage.addEventListener('mouseleave', () => {
+        myImage.src = 'assets/img/1752798249832.webp';
+    });
