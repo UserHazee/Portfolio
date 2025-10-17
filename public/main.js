@@ -1,46 +1,42 @@
-const buttonProject = document.getElementById('btnProject');
-buttonProject.addEventListener('click', function(){
-    
-    const targetElement = document.getElementById('projects');
-    targetElement.scrollIntoView({
+document.addEventListener('DOMContentLoaded', () => {
+  const buttonProject = document.getElementById('btnProject');
+  if (buttonProject) {
+    buttonProject.addEventListener('click', function(){
+      const targetElement = document.getElementById('projects');
+      targetElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
+      });
     });
-});
+  }
 
-
- const menuToggle = document.getElementById("menu-toggle");
-    const sidebar = document.getElementById("sidebar");
-    const closeBtn = document.getElementById("close-btn");
-    
-    // Function to open sidebar
-    function openSidebar() {
+  const menuToggle = document.getElementById("menu-toggle");
+  const sidebar = document.getElementById("sidebar");
+  const closeBtn = document.getElementById("close-btn");
+  
+  if (menuToggle && sidebar && closeBtn) {
+    menuToggle.addEventListener("click", () => {
       sidebar.classList.remove("translate-x-full");
       sidebar.classList.add("translate-x-0");
-    }
-
-    // Function to close sidebar
-    function closeSidebar() {
+    });
+    closeBtn.addEventListener("click", () => {
       sidebar.classList.add("translate-x-full");
       sidebar.classList.remove("translate-x-0");
-    }
-    
-    // Event listeners
-    menuToggle.addEventListener("click", openSidebar);
-    closeBtn.addEventListener("click", closeSidebar);
-
-
-    
+    });
     document.addEventListener("click", (e) => {
       if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
-        closeSidebar();
+        sidebar.classList.add("translate-x-full");
       }
     });
+  }
 
-      const myImage = document.getElementById('myImage');
+  const myImage = document.getElementById('myImage');
+  if (myImage) {
     myImage.addEventListener('mouseenter', () => {
-        myImage.src = 'assets/img/JUMPSCARE.webp';
+      myImage.src = 'assets/img/JUMPSCARE.webp';
     });
     myImage.addEventListener('mouseleave', () => {
-        myImage.src = 'assets/img/1752798249832.webp';
+      myImage.src = 'assets/img/1752798249832.webp';
     });
+  }
+});
